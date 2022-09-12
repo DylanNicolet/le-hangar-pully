@@ -1,0 +1,64 @@
+.hero{
+    background-image: url("/src/images/hero-background.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+
+    @include desktop-only{
+        height: 100vh;
+    }
+}
+
+.hero__content{
+    width: 85%;
+    margin: 50px auto 0 auto;
+
+    @include desktop-only{
+        display: flex;
+    }
+}
+
+.card__container{
+    @include desktop-only{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.hero__card{
+    width: 90%;
+    height: 200px;
+    margin: 0 auto 50px auto;
+    background-color: rgba(255, 254, 254, 0.127);
+    border: 2px solid $color-primary;
+    text-align: center;
+    padding-top: 25px;
+
+    @include desktop-only{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+
+.hero__card section{
+    display: flex;
+    justify-content: center;
+}
+
+.hero__icon{
+    color: $color-secondary;
+    font-size: 1.5rem;
+}
+
+.hero__icon--spaced{
+    margin: auto 20px auto 0;
+}
+
+.hero__image{
+    width: 50%;
+    height: 70vh;
+    object-fit: cover;
+}

@@ -14,10 +14,4 @@ body{
     p{
         font-size: 1rem;
     }
-
-    @include desktop-only{
-        h1{
-            font-size: 1.7rem;
-        }
-    }
 }

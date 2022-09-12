@@ -1,10 +1,23 @@
 import './sass/App.css';
-import Header from './components/Header';
+import Hero from './pages/Hero';
+import { useDispatch } from "react-redux";
+import { updateScreenWidth } from "./redux/webConfigSlice";
+import React from 'react';
 
 function App() {
+  const dispatch = useDispatch()
+
+  React.useEffect(() => {
+    function handleResize(){
+      dispatch(updateScreenWidth(window.innerWidth))
+    }
+
+    window.addEventListener("resize", handleResize)
+  },[])
+
   return (
     <section className="App">
-      <Header />
+      <Hero />
     </section>
   );
 }
