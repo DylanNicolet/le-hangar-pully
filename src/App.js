@@ -1,5 +1,6 @@
 import './sass/App.css';
 import Hero from './pages/Hero';
+import Keune from './pages/Keune';
 import { useDispatch } from "react-redux";
 import { updateScreenWidth } from "./redux/webConfigSlice";
 import React from 'react';
@@ -18,6 +19,7 @@ function App() {
   return (
     <section className="App">
       <Hero />
+      <Keune />
     </section>
   );
 }

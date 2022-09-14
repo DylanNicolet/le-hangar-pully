@@ -35,6 +35,8 @@ export default function Hero(){
                         </section>
                     </section>
 
+                    {screenWidth > desktopWidth && <section className="hero__card hero__card--hidden" />}
+
                     <section className="hero__card">
                         <p>Consulter nos reseaux sociaux pour les offres du moment</p>
                         <section>
@@ -42,6 +44,8 @@ export default function Hero(){
                             <FontAwesomeIcon icon={faInstagram} className="hero__icon" />
                         </section>
                     </section>
+
+                    
                 </section>
                 
             </section>

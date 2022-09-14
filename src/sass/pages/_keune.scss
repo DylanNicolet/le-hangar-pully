@@ -1,0 +1,23 @@
+.keune__panel{
+    background-image: url("/src/images/keune.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    margin: 50px auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keune__logo{
+    width: 65%;
+    transform: translateY(-10px);
+}
+
+.keune__text{
+    width: 85%;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
