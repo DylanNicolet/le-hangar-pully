@@ -1,6 +1,9 @@
 import './sass/App.css';
 import Hero from './pages/Hero';
 import Keune from './pages/Keune';
+import InfoSoin from './pages/InfoSoins';
+import Services from './pages/Services';
+import LeSalon from './pages/LeSalon';
 import { useDispatch } from "react-redux";
 import { updateScreenWidth } from "./redux/webConfigSlice";
 import React from 'react';
@@ -20,6 +23,9 @@ function App() {
     <section className="App">
       <Hero />
       <Keune />
+      <InfoSoin />
+      <Services />
+      <LeSalon />
     </section>
   );
 }

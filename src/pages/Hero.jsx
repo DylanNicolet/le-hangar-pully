@@ -14,7 +14,7 @@ export default function Hero(){
         <section className="hero">
             <Header/>
             <section className="hero__content">
-                {screenWidth > desktopWidth && <img alt="Le Hangar" src={heroImage} className="hero__image" />}
+                {screenWidth >= desktopWidth && <img alt="Le Hangar" src={heroImage} className="hero__image" />}
 
                 <section className="card__container">
                     <section className="hero__card">

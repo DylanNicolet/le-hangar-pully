@@ -1,5 +1,4 @@
 import React from "react";
-import keuneImage from "../images/keune.jpg"
 import keuneLogo from "../images/logo_keune.png"
 
 

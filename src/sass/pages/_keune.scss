@@ -1,3 +1,8 @@
+.keune{
+    @include desktop-only{
+    }
+}
+
 .keune__panel{
     background-image: url("/src/images/keune.jpg");
     background-position: center;
@@ -9,15 +14,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include desktop-only{
+        width: 750px;
+        height: 500px;
+    }
 }
 
 .keune__logo{
     width: 65%;
     transform: translateY(-10px);
+
+    @include desktop-only{
+        width: 350px;
+    }
 }
 
 .keune__text{
     width: 85%;
     margin: 0 auto 60px auto;
     text-align: center;
+
+    @include desktop-only{
+        width: 750px;
+        font-size: 1.2rem;
+        margin: 80px auto 120px auto;
+    }
 }

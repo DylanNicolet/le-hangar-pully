@@ -53,6 +53,8 @@ body {
   margin: 0;
   background-color: #3c3838;
   color: #ffffff;
+  max-width: 1900px;
+  margin: 0 auto;
 }
 
 body {
@@ -653,6 +655,110 @@ body p {
           align-items: center;
 }
 
+.card-with-modal {
+  width: 85%;
+  margin: 20px auto;
+  border: solid 2px #ffffff;
+  cursor: pointer;
+  background-color: rgba(255, 254, 254, 0.051);
+}
+
+@media only screen and (min-width: 920px) {
+  .card-with-modal {
+    width: 20vw;
+    margin: 20px 30px;
+    height: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .card-with-modal p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 920px) {
+  .hidden {
+    display: inline;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-soins {
+  background-color: rgba(0, 0, 0, 0.935);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+@media only screen and (min-width: 920px) {
+  .modal-soins p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .modal-soins h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .modal-soins {
+    padding: 0px 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.modal-soins h2 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.close-button {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 920px) {
+  .close-button {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 header {
   padding-top: 20px;
   width: 95%;
@@ -840,15 +946,145 @@ header {
           align-items: center;
 }
 
+@media only screen and (min-width: 920px) {
+  .keune__panel {
+    width: 750px;
+    height: 500px;
+  }
+}
+
 .keune__logo {
   width: 65%;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
+@media only screen and (min-width: 920px) {
+  .keune__logo {
+    width: 350px;
+  }
+}
+
 .keune__text {
   width: 85%;
   margin: 0 auto 60px auto;
   text-align: center;
+}
+
+@media only screen and (min-width: 920px) {
+  .keune__text {
+    width: 750px;
+    font-size: 1.2rem;
+    margin: 80px auto 120px auto;
+  }
+}
+
+.info-soin {
+  background-color: #2a2727;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+@media only screen and (min-width: 920px) {
+  .info-soin {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.info-soin h1 {
+  margin: 0px auto 20px auto;
+}
+
+@media only screen and (min-width: 920px) {
+  .info-soin h1 {
+    margin: 0px auto 50px auto;
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    width: 85%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 920px) {
+  .services {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.services__title {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 920px) {
+  .services__title {
+    margin-bottom: 70px;
+    font-size: 1.9rem;
+  }
+}
+
+.services__container {
+  border: 2px solid #ffffff;
+  width: 85%;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 920px) {
+  .services__container {
+    width: 35vw;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+}
+
+.services__container h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 920px) {
+  .services__container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .services__container li {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */
