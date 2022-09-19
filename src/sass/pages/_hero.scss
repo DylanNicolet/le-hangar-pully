@@ -1,12 +1,12 @@
 .hero{
-    background-image: url("/src/images/hero-background.jpg"); 
+    background-image: url("/src/images/hero-background-resized.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 20px;
 
     @include desktop-only{
-        height: 100vh;
+        padding-bottom: 0;
     }
 }
 
@@ -15,15 +15,19 @@
     margin: 50px auto 0 auto;
 
     @include desktop-only{
-        display: grid;
-        grid-template-columns: 2fr 2fr ;
+        display: flex;
+        width: 90%;
+        max-width: 1500px;
+        justify-content: center;
     }
 }
 
 .card__container{
     @include desktop-only{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 55%;
     }
 }
 
@@ -38,15 +42,37 @@
     padding-top: 25px;
 
     @include desktop-only{
-        width: 280px;
-        height: 280px;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 0;
+        padding: 0px 25px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
-.hero__card--hidden{
+.hero__card p{
+
+    @include desktop-only{
+        font-size: 0.7rem;
+    }
+    
+    @include big-desktop-only{
+        font-size: 1rem;
+    }
 }
 
+//filler card
+.hero__card--hidden{
+    opacity: 0;
+    pointer-events: none;
+}
 
+.hero__card--contact-card{
+    align-items: flex-start;
+}
 
 .hero__card section{
     display: flex;
@@ -56,18 +82,25 @@
 .hero__icon{
     color: $color-secondary;
     font-size: 1.5rem;
+
+    @include desktop-only{
+        font-size: 1.2vw;
+    }
 }
 
 .hero__icon--spaced{
     margin: auto 20px auto 0;
 }
 
-.hero__image{
-    width: 50%;
-    height: 70vh;
-    object-fit: cover;
+.hero__icon--socials{
+    font-size: 3rem;
+}
 
-    @include desktop-only{
-        width: 100%;
-    }
+//Doesn't need desktop settings
+.hero__image{
+    object-fit: cover;
+    width: 40%;
+    height: 60%;
+    margin-bottom: 80px;
+    border: 2px solid $color-primary;
 }

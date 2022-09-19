@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faPhone, faEnvelope, faMapPin } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import heroImage from "../images/hero.jpg";
 import { useSelector } from "react-redux";
@@ -24,7 +24,7 @@ export default function Hero(){
                         <p>Dimanche - Lundi: Fermé</p>
                     </section>
 
-                    <section className="hero__card">
+                    <section className="hero__card hero__card--contact-card">
                         <section>
                             <FontAwesomeIcon icon={faPhone} className="hero__icon hero__icon--spaced" />
                             <p>021 728 33 26</p>
@@ -33,6 +33,10 @@ export default function Hero(){
                             <FontAwesomeIcon icon={faEnvelope} className="hero__icon hero__icon--spaced" />
                             <p>le.hangar@outlook.com</p>
                         </section>
+                        <section>
+                            <FontAwesomeIcon icon={faMapPin} className="hero__icon hero__icon--spaced" />
+                            <p>Avenue de Lavaux 63, Pully</p>
+                        </section>
                     </section>
 
                     {screenWidth > desktopWidth && <section className="hero__card hero__card--hidden" />}
@@ -40,8 +44,8 @@ export default function Hero(){
                     <section className="hero__card">
                         <p>Consulter nos reseaux sociaux pour les offres du moment</p>
                         <section>
-                            <FontAwesomeIcon icon={faFacebook} className="hero__icon hero__icon--spaced" />
-                            <FontAwesomeIcon icon={faInstagram} className="hero__icon" />
+                            <FontAwesomeIcon icon={faFacebook} className="hero__icon hero__icon--spaced hero__icon--socials" />
+                            <FontAwesomeIcon icon={faInstagram} className="hero__icon hero__icon--socials" />
                         </section>
                     </section>
 

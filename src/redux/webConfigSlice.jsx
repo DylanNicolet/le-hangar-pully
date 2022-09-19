@@ -4,7 +4,7 @@ export const webConfigSlice = createSlice({
     name: "webConfig",
     initialState:{
         screenWidth: window.innerWidth,
-        desktopWidth: 920,
+        desktopWidth: 1024,
         modalSoins: {status: false, key: ""},
     },
     reducers:{

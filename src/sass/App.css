@@ -53,8 +53,6 @@ body {
   margin: 0;
   background-color: #3c3838;
   color: #ffffff;
-  max-width: 1900px;
-  margin: 0 auto;
 }
 
 body {
@@ -196,7 +194,7 @@ body p {
   text-align: left;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .create-employee__form {
     max-width: 1200px;
   }
@@ -223,7 +221,7 @@ body p {
   border-radius: 7px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .create-employee__form fieldset {
     width: 45%;
   }
@@ -243,7 +241,7 @@ body p {
   color: #ffffff;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .desktop-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,7 +262,7 @@ body p {
           flex-direction: column;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .name-with-dates {
     width: 45%;
   }
@@ -291,7 +289,7 @@ body p {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .button-save {
     width: 200px;
     margin: auto;
@@ -443,7 +441,7 @@ body p {
   background-image: linear-gradient(0.25turn, #fefdfb, white);
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .department-dropdown {
     width: 45%;
     -webkit-transform: translateY(-60px);
@@ -451,7 +449,7 @@ body p {
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .department-dropdown__label {
     -webkit-transform: translateY(-60px);
             transform: translateY(-60px);
@@ -663,7 +661,7 @@ body p {
   background-color: rgba(255, 254, 254, 0.051);
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .card-with-modal {
     width: 20vw;
     margin: 20px 30px;
@@ -680,7 +678,7 @@ body p {
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .card-with-modal p {
     font-weight: 600;
     font-size: 1.5rem;
@@ -691,7 +689,7 @@ body p {
   display: none;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .hidden {
     display: inline;
     opacity: 0;
@@ -719,19 +717,19 @@ body p {
   text-align: left;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .modal-soins p {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .modal-soins h2 {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .modal-soins {
     padding: 0px 300px;
     -webkit-box-pack: center;
@@ -751,7 +749,7 @@ body p {
   margin-top: 30px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .close-button {
     width: 200px;
     margin-left: auto;
@@ -765,7 +763,7 @@ header {
   margin: auto;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -781,7 +779,7 @@ header {
   width: 100%;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .header__logo {
     width: 190px;
     height: 100px;
@@ -796,7 +794,7 @@ header {
   list-style: none;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .header__nav {
     margin-top: 10px;
     margin-right: 10px;
@@ -833,23 +831,45 @@ header {
   background-color: rgba(255, 255, 255, 0.211);
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .header__li--bordered {
     margin: 0;
   }
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
 .hero {
-  background-image: url("/src/images/hero-background.jpg");
+  background-image: url("/src/images/hero-background-resized.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .hero {
-    height: 100vh;
+    padding-bottom: 0;
   }
 }
 
@@ -858,22 +878,28 @@ header {
   margin: 50px auto 0 auto;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .hero__content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 2fr;
-        grid-template-columns: 2fr 2fr;
-  }
-}
-
-@media only screen and (min-width: 920px) {
-  .card__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 90%;
+    max-width: 1500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    width: 55%;
   }
 }
 
@@ -889,11 +915,47 @@ header {
   padding-top: 25px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .hero__card {
-    width: 280px;
-    height: 280px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 0;
+    padding: 0px 25px 0px 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero__card p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero__card p {
+    font-size: 1rem;
+  }
+}
+
+.hero__card--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero__card--contact-card {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .hero__card section {
@@ -910,21 +972,27 @@ header {
   font-size: 1.5rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero__icon {
+    font-size: 1.2vw;
+  }
+}
+
 .hero__icon--spaced {
   margin: auto 20px auto 0;
 }
 
-.hero__image {
-  width: 50%;
-  height: 70vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+.hero__icon--socials {
+  font-size: 3rem;
 }
 
-@media only screen and (min-width: 920px) {
-  .hero__image {
-    width: 100%;
-  }
+.hero__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40%;
+  height: 60%;
+  margin-bottom: 80px;
+  border: 2px solid #ffffff;
 }
 
 .keune__panel {
@@ -946,7 +1014,7 @@ header {
           align-items: center;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .keune__panel {
     width: 750px;
     height: 500px;
@@ -959,7 +1027,7 @@ header {
           transform: translateY(-10px);
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .keune__logo {
     width: 350px;
   }
@@ -971,7 +1039,7 @@ header {
   text-align: center;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .keune__text {
     width: 750px;
     font-size: 1.2rem;
@@ -987,7 +1055,7 @@ header {
   position: relative;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .info-soin {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -998,14 +1066,14 @@ header {
   margin: 0px auto 20px auto;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .info-soin h1 {
     margin: 0px auto 50px auto;
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .card-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1031,7 +1099,7 @@ header {
           justify-content: center;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .services {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1045,7 +1113,7 @@ header {
   margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .services__title {
     margin-bottom: 70px;
     font-size: 1.9rem;
@@ -1060,7 +1128,7 @@ header {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .services__container {
     width: 35vw;
     padding-left: 30px;
@@ -1075,16 +1143,38 @@ header {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .services__container h2 {
     font-size: 1.4rem;
     margin-bottom: 50px;
   }
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .services__container li {
     font-size: 1.2rem;
   }
+}
+
+.le-salon {
+  text-align: center;
+}
+
+.le-salon__container img {
+  width: 85%;
+  margin-bottom: 40px;
+  border: 2px solid #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .le-salon__container img {
+    width: 20vw;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.le-salon__container p {
+  margin-top: 0;
 }
 /*# sourceMappingURL=App.css.map */
