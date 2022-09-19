@@ -31,22 +31,22 @@ header{
     }
 }
 
-.header__li{
+.header__a{
     margin-left: 30px;
     font-size: 1.3rem;
     margin-top: 11px;
     cursor: pointer;
-    
+    text-decoration: none;
+    color: $color-primary;
     font-size: 1rem;
     
-
     &:hover{
         text-decoration: underline;
         transition: 5s;
     }
 }
 
-.header__li--bordered{
+.button-rdv {
     border: 2px solid $color-primary;
     height: 40px;
     padding: 9px 12px;
@@ -55,6 +55,8 @@ header{
     transition: 0.4s;
     margin: 20px auto 0 auto;
     font-size: 1rem;
+    background-color: transparent;
+    color: $color-primary;
 
     &:hover{
         background-color: rgba(255, 255, 255, 0.211);
@@ -63,4 +65,36 @@ header{
     @include desktop-only{
         margin: 0;
     }
+}
+
+.modal-rdv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(26, 24, 24, 0.91);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.calendar-icon{
+    font-size: 2rem;
+}
+
+.button-close-modal{
+    font-weight: 600;
+    border: none;
+    padding: 12px 40px 10px 40px;
+    margin-top: 40px;
+    cursor: pointer;
 }

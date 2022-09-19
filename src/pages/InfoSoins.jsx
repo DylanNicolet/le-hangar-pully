@@ -11,6 +11,7 @@ export default function InfoSoin(){
         <section className="info-soin">
             {modalStatus && <ModalSoins />}
             <h1>Soins Spéciaux</h1>
+            <p>Clicker pour afficher plus de détails</p>
             <section className="card-container">
                 <CardWithModal text="Soin Botox"/>
                 <CardWithModal text="Lissage Kératine"/>

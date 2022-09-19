@@ -44,8 +44,8 @@ export default function Hero(){
                     <section className="hero__card">
                         <p>Consulter nos reseaux sociaux pour les offres du moment</p>
                         <section>
-                            <FontAwesomeIcon icon={faFacebook} className="hero__icon hero__icon--spaced hero__icon--socials" />
-                            <FontAwesomeIcon icon={faInstagram} className="hero__icon hero__icon--socials" />
+                            <a href="https://www.facebook.com/profile.php?id=100063541963485" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} className="hero__icon hero__icon--spaced hero__icon--socials" /></a>
+                            <a href="https://www.instagram.com/le.hangar.coiffure/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="hero__icon hero__icon--socials" /></a>
                         </section>
                     </section>
 
