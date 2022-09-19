@@ -1,0 +1,106 @@
+.hero{
+    background-image: url("/src/images/hero-background-resized.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+
+    @include desktop-only{
+        padding-bottom: 0;
+    }
+}
+
+.hero__content{
+    width: 85%;
+    margin: 50px auto 0 auto;
+
+    @include desktop-only{
+        display: flex;
+        width: 90%;
+        max-width: 1500px;
+        justify-content: center;
+    }
+}
+
+.card__container{
+    @include desktop-only{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 55%;
+    }
+}
+
+.hero__card{
+    width: 90%;
+    height: 200px;
+    margin: 0 auto 50px auto;
+    background-color: rgba(255, 254, 254, 0.075);
+    backdrop-filter: blur(1.5px);
+    border: 2px solid $color-primary;
+    text-align: center;
+    padding-top: 25px;
+
+    @include desktop-only{
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 0;
+        padding: 0px 25px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.hero__card p{
+
+    @include desktop-only{
+        font-size: 0.7rem;
+    }
+    
+    @include big-desktop-only{
+        font-size: 1rem;
+    }
+}
+
+//filler card
+.hero__card--hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hero__card--contact-card{
+    align-items: flex-start;
+}
+
+.hero__card section{
+    display: flex;
+    justify-content: center;
+}
+
+.hero__icon{
+    color: $color-secondary;
+    font-size: 1.5rem;
+
+    @include desktop-only{
+        font-size: 1.2vw;
+    }
+}
+
+.hero__icon--spaced{
+    margin: auto 20px auto 0;
+}
+
+.hero__icon--socials{
+    font-size: 3rem;
+}
+
+//Doesn't need desktop settings
+.hero__image{
+    object-fit: cover;
+    width: 40%;
+    height: 60%;
+    margin-bottom: 80px;
+    border: 2px solid $color-primary;
+}

@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './sass/App.css';
+import Hero from './pages/Hero';
+import Keune from './pages/Keune';
+import InfoSoin from './pages/InfoSoins';
+import Services from './pages/Services';
+import LeSalon from './pages/LeSalon';
+import Map from './pages/Map';
+import Footer from './components/Footer';
+import { useDispatch } from "react-redux";
+import { updateScreenWidth } from "./redux/webConfigSlice";
+import React from 'react';
 
 function App() {
+  const dispatch = useDispatch()
+
+  React.useEffect(() => {
+    function handleResize(){
+      dispatch(updateScreenWidth(window.innerWidth))
+    }
+
+    window.addEventListener("resize", handleResize)
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <Hero />
+      <Keune />
+      <InfoSoin />
+      <Services />
+      <LeSalon />
+      <Map />
+      <Footer />
+    </section>
   );
 }
 

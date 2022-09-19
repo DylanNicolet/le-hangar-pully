@@ -1,0 +1,52 @@
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop-only{
+        justify-content: space-around;
+    }
+}
+
+.services__title{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include desktop-only{
+        margin-bottom: 70px;
+        font-size: 1.9rem;
+    }
+}
+
+.services__container{
+    border: 2px solid $color-primary;
+    width: 85%;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    @include desktop-only{
+        width: 35vw;
+        padding-left: 30px;
+        padding-right: 25px;padding-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+
+        @include desktop-only{
+            font-size: 1.4rem;
+            margin-bottom: 50px;
+        }
+    }
+    
+    li{
+        @include desktop-only{
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+footer{
+    width: 100%;
+    text-align: center;
+
+    @include desktop-only{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+footer p{
+    font-size: 0.8rem;
+}

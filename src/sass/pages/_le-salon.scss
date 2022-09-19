@@ -1,0 +1,19 @@
+.le-salon{
+    text-align: center;
+}
+
+.le-salon__container img{
+    width: 85%;
+    margin-bottom: 40px;
+    border: 2px solid $color-primary;
+
+    @include desktop-only{
+        width: 20vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.le-salon__container p{
+    margin-top: 0;
+}

@@ -1,0 +1,47 @@
+.modal-soins{
+    background-color: rgba(0, 0, 0, 0.935);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    p{
+        @include desktop-only{
+            font-size: 1.2rem;
+        }
+    }
+
+    h2{
+        @include desktop-only{
+            font-size: 1.2rem;
+        }
+    }
+
+    @include desktop-only{
+        padding: 0px 300px;
+        justify-content: center;
+    }
+}
+.modal-soins h2{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.close-button{
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 30px;
+
+    @include desktop-only{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
