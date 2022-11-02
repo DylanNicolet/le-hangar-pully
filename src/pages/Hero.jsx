@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 export default function Hero(){
     const screenWidth = useSelector((state) => state.webConfig.screenWidth)
     const desktopWidth = useSelector((state) => state.webConfig.desktopWidth)
+    
 
     return(
         <section className="hero">
