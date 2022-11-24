@@ -20,7 +20,7 @@ export default function Hero(){
                 <section className="card__container">
                     <section className="hero__card">
                         <FontAwesomeIcon icon={faClock} className="hero__icon" />
-                        <p>Mardi - Vendredi: 10h - 17h</p>
+                        <p>Mardi - Vendredi: 10h - 19h</p>
                         <p>Samedi: 9h - 17h</p>
                         <p>Dimanche - Lundi: Fermé</p>
                     </section>
