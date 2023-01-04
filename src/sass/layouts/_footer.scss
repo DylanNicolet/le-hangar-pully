@@ -1,15 +1,18 @@
 footer{
     width: 100%;
     text-align: center;
+    background-color: $bkg-secondary;
+    padding: 10px;
 
     @include desktop-only{
         display: flex;
         justify-content: space-between;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 20px 40px;
     }
 }
 
 footer p{
     font-size: 0.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
 }

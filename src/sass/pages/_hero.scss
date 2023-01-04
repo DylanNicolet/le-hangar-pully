@@ -96,6 +96,23 @@
     font-size: 3rem;
 }
 
+.hero__card--map-link a{
+    color: $color-primary;
+    text-decoration: none;
+
+    @include desktop-only{
+        font-size: 0.7rem;
+    }
+    
+    @include big-desktop-only{
+        font-size: 1rem;
+    }
+}
+
+.hero__card--map-link{
+    margin-top: 13px;
+}
+
 //Doesn't need desktop settings
 .hero__image{
     object-fit: cover;

@@ -34,9 +34,9 @@ export default function Hero(){
                             <FontAwesomeIcon icon={faEnvelope} className="hero__icon hero__icon--spaced" />
                             <p>le.hangar@outlook.com</p>
                         </section>
-                        <section>
+                        <section className="hero__card--map-link">
                             <FontAwesomeIcon icon={faMapPin} className="hero__icon hero__icon--spaced" />
-                            <p>Avenue de Lavaux 63, Pully</p>
+                            <a href="https://goo.gl/maps/JnjxKwWeSbyHfGxy7" target="_blank" rel="noreferrer">Avenue de Lavaux 63, Pully</a>
                         </section>
                     </section>
 
