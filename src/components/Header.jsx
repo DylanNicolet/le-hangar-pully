@@ -10,7 +10,7 @@ export default function Header(){
         <header>
             <img src={logo} alt="Le Hangar logo" className="header__logo"/>
             <nav className="header__nav">
-                <button className="button-rdv"><a href="http://onlinebooking.ikosoft.com/8B14C803406CAA52F7520005C/FRA" target="_blank" rel="noreferrer">Prendre rendez-vous en ligne</a></button>
+                <button className="button-rdv"><a href="https://salonkee.ch/salon/le-hangar?lang=fr" target="_blank" rel="noreferrer">Prendre rendez-vous en ligne</a></button>
                 {screenWidth > desktopWidth && <a href="#le-salon" className="header__a">Le Salon</a>}
                 {screenWidth > desktopWidth && <a href="https://goo.gl/maps/JnjxKwWeSbyHfGxy7" className="header__a" target="_blank" rel="noreferrer">Direction</a>}
             </nav>
