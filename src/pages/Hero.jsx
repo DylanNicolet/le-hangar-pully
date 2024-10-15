@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faPhone, faEnvelope, faMapPin } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import heroImage from "../images/hero.jpg";
+import heroImage from "../images/hero.webp";
 import { useSelector } from "react-redux";
 
 export default function Hero(){

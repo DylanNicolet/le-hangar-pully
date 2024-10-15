@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../images/img-salon1.jpg"
-import image2 from "../images/img-salon2.jpg"
+import image1 from "../images/img-salon1.webp"
+import image2 from "../images/img-salon2.webp"
 
 export default function LeSalon(){
     return(
