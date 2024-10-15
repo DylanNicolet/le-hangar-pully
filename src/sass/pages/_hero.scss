@@ -117,7 +117,7 @@
 .hero__image{
     object-fit: cover;
     width: 40%;
-    height: 60%;
+    aspect-ratio: 3/4;
     margin-bottom: 80px;
     border: 2px solid $color-primary;
 }
