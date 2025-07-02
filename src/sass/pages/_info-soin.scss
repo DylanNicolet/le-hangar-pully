@@ -1,27 +1,27 @@
-.info-soin{
+.info-soin {
     background-color: $bkg-secondary;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
     position: relative;
 
-    @include desktop-only{
+    @include desktop-only {
         padding-top: 80px;
         padding-bottom: 80px;
     }
 }
 
-.info-soin h1{
+.info-soin h2 {
     margin: 0px auto 20px auto;
 
-    @include desktop-only{
+    @include desktop-only {
         margin: 0px auto 50px auto;
         font-size: 1.9rem;
     }
 }
 
-.card-container{
-    @include desktop-only{
+.card-container {
+    @include desktop-only {
         display: flex;
         flex-wrap: wrap;
         margin: auto;

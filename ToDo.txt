@@ -1,0 +1,5 @@
+1. Convert Redux to Zustand
+2. Fix accesibility for Modal Infosoin => Status of modal should be reflected on the Aria
+3. Change InfoSoin section from Flex to grid display => Don't need the hidden block on desktop with grid display
+4. Try to simplify the modal openning logic, too complicated right now
+5. Do a quality control on Mobile view (also check modals)
