@@ -4,3 +4,5 @@
 4. Try to simplify the modal openning logic, too complicated right now
 5. Do a quality control on Mobile view (also check modals)
 6. Fix all inconsistencise with font sizes
+7. Fix where the images are stored => move to a Assets folder
+8. Clean all unused packages from npm
