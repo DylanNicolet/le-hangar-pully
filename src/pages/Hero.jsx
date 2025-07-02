@@ -13,6 +13,8 @@ export default function Hero() {
         <section className="hero">
             <Header/>
 
+            <h1 className="visually-hidden">Bienvenue chez Le Hangar</h1>
+
             <section className="hero__content">
                 {screenWidth >= desktopWidth && <img alt="Le Hangar" src={heroImage} className="hero__image" />}
 

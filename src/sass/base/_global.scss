@@ -10,3 +10,6 @@ body{
     color: $color-primary;
 }
 
+.visually-hidden { // Used for accessibility and SEO purposes
+    display: none;
+}
