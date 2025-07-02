@@ -6,3 +6,6 @@
 6. Fix all inconsistencise with font sizes
 7. Fix where the images are stored => move to a Assets folder
 8. Clean all unused packages from npm
+9. TOP PRIORITY -> Remove all unused SCSS files
+10. Replace Font awesome icons with downloaded assets
+11. Fix image sizes the last section
