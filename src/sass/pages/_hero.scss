@@ -1,20 +1,20 @@
-.hero{
+.hero {
     background-image: url("/src/images/hero-background-resized.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 20px;
 
-    @include desktop-only{
+    @include desktop-only {
         padding-bottom: 0;
     }
 }
 
-.hero__content{
+.hero__content {
     width: 85%;
     margin: 50px auto 0 auto;
 
-    @include desktop-only{
+    @include desktop-only {
         display: flex;
         width: 90%;
         max-width: 1500px;
@@ -22,8 +22,8 @@
     }
 }
 
-.card__container{
-    @include desktop-only{
+.card__container {
+    @include desktop-only {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -31,7 +31,7 @@
     }
 }
 
-.hero__card{
+.hero__card {
     width: 90%;
     height: 200px;
     margin: 0 auto 50px auto;
@@ -41,7 +41,7 @@
     text-align: center;
     padding-top: 25px;
 
-    @include desktop-only{
+    @include desktop-only {
         width: 80%;
         height: 80%;
         margin: auto;
@@ -53,68 +53,70 @@
     }
 }
 
-.hero__card p{
-
-    @include desktop-only{
+.hero__card p {
+    @include desktop-only {
         font-size: 0.7rem;
     }
     
-    @include big-desktop-only{
+    @include big-desktop-only {
         font-size: 1rem;
     }
 }
 
 //filler card
-.hero__card--hidden{
+.hero__card--hidden {
     opacity: 0;
     pointer-events: none;
 }
 
-.hero__card--contact-card{
+.hero__card--contact-card {
     align-items: flex-start;
+
+    section {
+        margin-top: 13px;
+
+        a {
+            color: $color-primary;
+
+            @include desktop-only {
+                font-size: 0.7rem;
+            }
+            
+            @include big-desktop-only {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
-.hero__card section{
+.hero__card section {
     display: flex;
     justify-content: center;
 }
 
-.hero__icon{
+.hero__icon {
     color: $color-secondary;
     font-size: 1.5rem;
 
-    @include desktop-only{
+    @include desktop-only {
         font-size: 1.2vw;
     }
 }
 
-.hero__icon--spaced{
+.hero__icon--spaced {
     margin: auto 20px auto 0;
 }
 
-.hero__icon--socials{
+.hero__icon--socials {
     font-size: 3rem;
 }
 
-.hero__card--map-link a{
-    color: $color-primary;
-    text-decoration: none;
-
-    @include desktop-only{
-        font-size: 0.7rem;
-    }
-    
-    @include big-desktop-only{
-        font-size: 1rem;
-    }
-}
-
-.hero__card--map-link{
+.hero__card--map-link {
     margin-top: 13px;
 }
 
 //Doesn't need desktop settings
-.hero__image{
+.hero__image {
     object-fit: cover;
     width: 40%;
     aspect-ratio: 3/4;
