@@ -11,7 +11,7 @@ export default function CardWithModal(props) {
 
     return (
         props.hidden ?
-            <section className="card-with-modal hidden" aria-hidden="true"></section>
+            <div className="card-with-modal hidden" aria-hidden="true"></div>
         :
             <button className="card-with-modal" onClick={handleClick}>
                 {props.text}

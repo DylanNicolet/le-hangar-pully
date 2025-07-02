@@ -4,7 +4,6 @@ import Keune from './pages/Keune';
 import InfoSoin from './pages/InfoSoins';
 import Services from './pages/Services';
 import LeSalon from './pages/LeSalon';
-import Map from './pages/Map';
 import Footer from './components/Footer';
 import { useDispatch } from "react-redux";
 import { updateScreenWidth } from "./redux/webConfigSlice";
@@ -22,14 +21,17 @@ function App() {
   },[])
 
   return (
-    <section className="App">
-      <Hero />
-      <Keune />
-      <InfoSoin />
-      <Services />
-      <LeSalon />
+    <div className="App">
+      <main>
+        <h1 className="visually-hidden">Bienvenue chez Le Hangar</h1>
+        <Hero />
+        <Keune />
+        <InfoSoin />
+        <Services />
+        <LeSalon />
+      </main>
       <Footer />
-    </section>
+    </div>
   );
 }
 

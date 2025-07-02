@@ -11,7 +11,7 @@ export default function InfoSoin(){
 
             <h2>Soins Spéciaux</h2>
 
-            <p>Clicker pour afficher plus de détails</p>
+            <p>Cliquez pour afficher plus de détails</p>
             
             <section className="card-container">
                 <CardWithModal text="Soin Botox"/>
