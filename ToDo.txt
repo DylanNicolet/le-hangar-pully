@@ -3,3 +3,4 @@
 3. Change InfoSoin section from Flex to grid display => Don't need the hidden block on desktop with grid display
 4. Try to simplify the modal openning logic, too complicated right now
 5. Do a quality control on Mobile view (also check modals)
+6. Fix all inconsistencise with font sizes
