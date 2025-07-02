@@ -1,21 +1,22 @@
-import React from "react";
-
-export default function Services(){
-    return(
+export default function Services() {
+    return (
         <section className="services">
-            <h1 className="services__title">Prestations</h1>
+            <h2 className="services__title">Prestations</h2>
+
             <section className="services__container">
-                <h2>Coiffure</h2>
+                <h3>Coiffure</h3>
+
                 <ul>
                     <li>Coloration</li>
                     <li>Décoloration</li>
-                    <li>Mèches (Balayage, Ombré, ...)</li>
-                    <li>coupe homme/femme/enfant</li>
+                    <li>Mèches (Balayage, Ombré…)</li>
+                    <li>Coupe Homme/Femme/Enfant</li>
                 </ul>
             </section>
 
             <section className="services__container">
-                <h2>Onglerie</h2>
+                <h3>Onglerie</h3>
+
                 <ul>
                     <li>Manucure</li>
                     <li>Gel</li>
