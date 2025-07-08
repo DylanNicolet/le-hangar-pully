@@ -9,3 +9,5 @@
 9. TOP PRIORITY -> Remove all unused SCSS files
 10. Replace Font awesome icons with downloaded assets
 11. Fix image sizes the last section
+12. Do ReadMe
+13. Fix all compiler warning and deprecations
