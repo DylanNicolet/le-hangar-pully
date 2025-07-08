@@ -1,19 +1,20 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { updateModalSoins } from "../redux/webConfigSlice";
 
 //props: text=string; hidden=boolean
-export default function CardWithModal(props){
+export default function CardWithModal(props) {
     const dispatch = useDispatch()
 
-    function handleClick(){
+    function handleClick() {
         dispatch(updateModalSoins({status: true, key: props.text}))
-
     }
 
-    return(
-        <section className={props.hidden? "card-with-modal hidden" : "card-with-modal"} onClick={handleClick}>
-            <p>{props.text}</p>
-        </section>
+    return (
+        props.hidden ?
+            <div className="card-with-modal hidden" aria-hidden="true"></div>
+        :
+            <button className="card-with-modal" onClick={handleClick}>
+                {props.text}
+            </button>
     )
 }

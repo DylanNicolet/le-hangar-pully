@@ -1,38 +1,35 @@
-.card-with-modal{
+.card-with-modal {
     width: 85%;
+    height: 4rem;
     margin: 20px auto;
     border: solid 2px $color-primary;
     cursor: pointer;
     background-color: rgba(255, 254, 254, 0.051);
     transition: all 0.5s;
+    color: $color-primary;
 
-    &:hover{
+    &:hover {
         background-color: rgba(255, 255, 255, 0.236);
     }
 
-    @include desktop-only{
+    @include desktop-only {
         width: 20vw;
         margin: 20px 30px;
         height: 20vw;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-}
-
-.card-with-modal p{
-    @include desktop-only{
         font-weight: 600;
         font-size: 1.5rem;
     }
 }
 
 //Property for the filler card (5th child on the card container)
-.hidden{
+.hidden {
     display: none;
 
-    @include desktop-only{
-        display: inline;
+    @include desktop-only {
+        display: flex;
         opacity: 0;
         pointer-events: none;
     }

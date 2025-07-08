@@ -1,78 +1,71 @@
-header{
+header {
     padding-top: 20px;
     width: 95%;
     margin: auto;
 
-    @include desktop-only{
+    @include desktop-only {
         display: flex;
         justify-content: space-between;
     }
 }
 
-.header__logo{
+.header__logo {
     border: 4px solid black;
     width: 100%;
 
-    @include desktop-only{
+    @include desktop-only {
         width: 190px;
         height: 100px; 
     }
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     text-decoration: none;
     list-style: none;
-    
 
-    @include desktop-only{
+    @include desktop-only {
         margin-top: 10px;
         margin-right: 10px;
     }
 }
 
-.header__a{
+.header__a {
     margin-left: 30px;
-    font-size: 1.3rem;
     margin-top: 11px;
     cursor: pointer;
     text-decoration: none;
     color: $color-primary;
     font-size: 1rem;
     
-    &:hover{
+    &:hover {
         text-decoration: underline;
         transition: 5s;
     }
 }
 
-.button-rdv {
+.button-rdv  {
     border: 2px solid $color-primary;
     height: 40px;
     padding: 9px 12px;
-    font-size: 1.3rem;
     cursor: pointer;
     transition: 0.4s;
     margin: 20px auto 0 auto;
     font-size: 1rem;
     background-color: transparent;
-    
+    color: $color-primary;
+    text-decoration: none;
 
-    &:hover{
+    &:hover {
         background-color: rgba(255, 255, 255, 0.211);
     }
 
-    @include desktop-only{
+    @include desktop-only {
         margin: 0;
     }
 }
 
-.button-rdv a{
-    color: $color-primary;
-    text-decoration: none;
-}
-
-.modal-rdv{
+.modal-rdv {
     position: fixed;
     top: 0;
     left: 0;
@@ -87,16 +80,16 @@ header{
     padding-left: 10px;
     padding-right: 10px;
 
-    p{
+    p {
         font-size: 1.2rem;
     }
 }
 
-.calendar-icon{
+.calendar-icon {
     font-size: 2rem;
 }
 
-.button-close-modal{
+.button-close-modal {
     font-weight: 600;
     border: none;
     padding: 12px 40px 10px 40px;

@@ -1,4 +1,4 @@
-.modal-soins{
+.modal-soins {
     background-color: rgba(0, 0, 0, 0.935);
     width: 100vw;
     height: 100vh;
@@ -12,35 +12,43 @@
     flex-direction: column;
     text-align: left;
 
-    p{
-        @include desktop-only{
+    p {
+        @include desktop-only {
             font-size: 1.2rem;
         }
     }
 
-    h2{
-        @include desktop-only{
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1rem;
+        text-align: center;
+
+        @include desktop-only {
             font-size: 1.2rem;
         }
     }
 
-    @include desktop-only{
+    @include desktop-only {
         padding: 0px 300px;
         justify-content: center;
     }
 }
-.modal-soins h2{
+.modal-soins h2 {
     margin-top: 30px;
     margin-bottom: 0px;
 }
 
-.close-button{
+.close-button {
     font-weight: 800;
     font-size: 1.2rem;
     margin-top: 30px;
     cursor: pointer;
 
-    @include desktop-only{
+    @include desktop-only {
         width: 200px;
         margin-left: auto;
         margin-right: auto;
